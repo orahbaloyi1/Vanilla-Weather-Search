@@ -58,7 +58,7 @@ function handleSubmit(event) {
   let inputElement = document.querySelector("#input-city");
   search(inputElement.value);
 }
-search("Paris");
+search("New York");
 
 function displayFarenheitTemperature(event) {
   event.preventDefault();
