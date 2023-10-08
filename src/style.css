@@ -48,3 +48,9 @@ li:first-letter {
   position: relative;
   top: -34px;
 }
+#celcius-link {
+  text-decoration: none;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
