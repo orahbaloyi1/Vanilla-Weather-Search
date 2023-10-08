@@ -62,6 +62,8 @@ search("New York");
 
 function displayFarenheitTemperature(event) {
   event.preventDefault();
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
 
@@ -69,6 +71,8 @@ function displayFarenheitTemperature(event) {
 }
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  fahrenheitLink.classList.remove("active");
+  celciusLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
 
   temperatureElement.innerHTML = celciusTemperature;
